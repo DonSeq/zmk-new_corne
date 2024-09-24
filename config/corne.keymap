@@ -94,7 +94,7 @@
             >;
 
             label = "NUMBER";
-            sensor-bindings = <&inc_dec_kp LS(RIGHT_ARROW) LEFT_ARROW>;
+            sensor-bindings = <&inc_dec_kp LS(RIGHT_ARROW) LS(LEFT_ARROW)>;
         };
 
         symbol {
