@@ -1,5 +1,6 @@
 #include <behaviors/mouse_keys.dtsi>
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
@@ -64,18 +65,18 @@
             //                                                      enter
 
             bindings = <
-&kp TAB           &kp Q  &kp W       &kp E        &kp R            &kp T          &kp UP_ARROW     &kp Y        &kp U            &kp I        &kp O    &kp P     &kp BSPC
-&mt LCTRL ESCAPE  &kp A  &kp S       &kp D        &kp F            &kp G          &kp DOWN_ARROW   &kp H        &kp J            &kp K        &kp L    &kp SEMI  &kp SQT
-&kp LEFT_SHIFT    &kp Z  &kp X       &kp C        &kp V            &kp B          &kp LEFT_ARROW   &kp N        &kp M            &kp COMMA    &kp DOT  &kp FSLH  &mo 4
-                         &kp K_MUTE  &lt 3 ENTER  &lt 2 BACKSPACE  &lt 1 SPACE    &kp RIGHT_ARROW  &lt 1 ENTER  &lt 2 BACKSPACE  &lt 3 SPACE
-                                                                                  &kp ENTER
+&kp TAB           &kp Q  &kp W       &kp E      &kp R            &kp T          &kp UP_ARROW     &kp Y        &kp U            &kp I        &kp O    &kp P     &kp BSPC
+&mt LCTRL ESCAPE  &kp A  &kp S       &kp D      &kp F            &kp G          &kp DOWN_ARROW   &kp H        &kp J            &kp K        &kp L    &kp SEMI  &kp SQT
+&kp LEFT_SHIFT    &kp Z  &kp X       &kp C      &kp V            &kp B          &kp LEFT_ARROW   &kp N        &kp M            &kp COMMA    &kp DOT  &kp FSLH  &mo 4
+                         &kp K_MUTE  &lt 3 DEL  &lt 2 BACKSPACE  &lt 1 SPACE    &kp RIGHT_ARROW  &lt 1 ENTER  &lt 2 BACKSPACE  &lt 3 SPACE
+                                                                                &kp ENTER
             >;
 
             label = "QWERTY";
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
-        one {
+        navigation {
             display-name = "NUM_NAV";
 
             // -----------------------------------------------------------------------------------------
@@ -85,18 +86,18 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp PAGE_UP   &kp HOME           &kp UP_ARROW  &kp END    &kp PAGE_DOWN          &mmv MOVE_UP     &kp MINUS     &kp N7        &kp N8        &kp N9        &trans  &kp BSPC
-&trans  &kp LC(LEFT)  &kp LEFT           &kp DOWN      &kp RIGHT  &kp LC(RIGHT_ARROW)    &mmv MOVE_DOWN   &kp KP_PLUS   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
-&trans  &trans        &trans             &trans        &trans     &trans                 &mmv MOVE_LEFT   &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
-                      &ext_power EP_TOG  &trans        &trans     &trans                 &mmv MOVE_RIGHT  &trans        &kp KP_EQUAL  &trans
-                                                                                         &mkp LCLK
+&trans  &kp PAGE_UP   &kp HOME   &kp UP_ARROW  &kp END    &kp PAGE_DOWN          &mmv MOVE_UP     &kp MINUS  &kp N7        &kp N8        &kp N9        &kp KP_MULTIPLY  &kp BSPC
+&trans  &kp LC(LEFT)  &kp LEFT   &kp DOWN      &kp RIGHT  &kp LC(RIGHT_ARROW)    &mmv MOVE_DOWN   &kp EQUAL  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_DIVIDE    &trans
+&trans  &trans        &trans     &trans        &trans     &trans                 &mmv MOVE_LEFT   &kp PLUS   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans           &trans
+                      &mkp RCLK  &trans        &trans     &trans                 &mmv MOVE_RIGHT  &kp ENTER  &kp N0        &trans
+                                                                                 &mkp LCLK
             >;
 
             label = "NUMBER";
-            sensor-bindings = <&rgb_encoder>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
-        two {
+        symbol {
             display-name = "SYMBOL";
 
             // -----------------------------------------------------------------------------------------
@@ -117,32 +118,32 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        three {
+        func {
             display-name = "FN";
             bindings = <
-&kp TAB          &kp F1            &kp F2            &kp F3            &kp F4            &kp F5              &mmv MOVE_UP     &kp F6            &kp F7            &kp F8            &kp F9            &kp F10           &kp F11
-&kp ESCAPE       &kp NUMBER_1      &kp NUMBER_2      &kp NUMBER_3      &kp NUMBER_4      &kp NUMBER_5        &mmv MOVE_DOWN   &kp NUMBER_6      &kp NUMBER_7      &kp NUMBER_8      &kp NUMBER_9      &kp NUMBER_0      &kp F12
-&kp PRINTSCREEN  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)    &mmv MOVE_LEFT   &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(NUMBER_0)  &trans
-                                   &sys_reset        &trans            &trans            &trans              &mmv MOVE_RIGHT  &trans            &trans            &trans
-                                                                                                             &mkp LCLK
+&kp LEFT_ALT      &kp F1            &kp F2            &kp F3            &kp F4            &kp F5              &mmv MOVE_UP     &kp F6            &kp F7             &kp F8            &kp F9            &kp F10           &kp F11
+&kp LEFT_CONTROL  &kp NUMBER_1      &kp NUMBER_2      &kp NUMBER_3      &kp NUMBER_4      &kp NUMBER_5        &mmv MOVE_DOWN   &kp NUMBER_6      &kp NUMBER_7       &kp NUMBER_8      &kp NUMBER_9      &kp NUMBER_0      &kp F12
+&kp LEFT_SHIFT    &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)    &mmv MOVE_LEFT   &kp LS(NUMBER_6)  &kp LS(NUMBER_7)   &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(NUMBER_0)  &trans
+                                    &sys_reset        &trans            &kp LEFT_CONTROL  &kp LEFT_SHIFT      &mmv MOVE_RIGHT  &kp RIGHT_SHIFT   &kp RIGHT_CONTROL  &trans
+                                                                                                              &mkp LCLK
             >;
 
             label = "FN";
             sensor-bindings = <&scroll_encoder>;
         };
 
-        four {
-            label = "NUMBER";
-            display-name = "NUMBER";
+        system {
+            label = "SYS";
+            display-name = "SYS";
             bindings = <
-&trans  &kp N1           &kp N2          &kp N3             &kp N4        &kp N5             &mmv MOVE_UP     &kp N6           &kp N7        &kp N8        &kp N9           &kp N0    &kp BSPC
-&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1       &bt BT_SEL 2  &bt BT_SEL 3       &mmv MOVE_DOWN   &kp LEFT         &kp DOWN      &kp UP        &kp RIGHT        &kp HOME  &kp PG_UP
-&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &ext_power EP_OFF  &trans        &rgb_ug RGB_EFF    &mmv MOVE_LEFT   &rgb_ug RGB_EFR  &kp NUMBER_1  &kp NUMBER_2  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
-                         &kp C_MUTE      &trans             &trans        &trans             &mmv MOVE_RIGHT  &kp INS          &kp DEL       &trans
-                                                                                             &mkp LCLK
+&ext_power EP_TOG  &kp N1           &kp N2           &kp N3           &kp N4           &kp N5             &mmv MOVE_UP     &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &kp BSPC
+&sys_reset         &bt BT_CLR_ALL   &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3       &mmv MOVE_DOWN   &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &kp PG_UP
+&bl BL_TOG         &rgb_ug RGB_TOG  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD    &mmv MOVE_LEFT   &trans    &trans    &trans  &trans     &trans  &none
+                                    &kp C_MUTE       &trans           &trans           &trans             &mmv MOVE_RIGHT  &trans    &trans    &trans
+                                                                                                          &mkp LCLK
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>;
         };
     };
 };
