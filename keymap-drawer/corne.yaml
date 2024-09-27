@@ -116,7 +116,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+ C
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - +
@@ -161,7 +161,7 @@ layers:
   - F9
   - F10
   - F11
-  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
   - '1'
   - '2'
   - '3'
@@ -174,7 +174,7 @@ layers:
   - '9'
   - '0'
   - F12
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
   - Sft+ 1
   - Sft+ 2
   - Sft+ 3
@@ -186,7 +186,7 @@ layers:
   - Sft+ 8
   - Sft+ 9
   - Sft+ 0
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {type: held}
   - $$mdi:apple-keyboard-control$$
@@ -222,7 +222,7 @@ layers:
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - PG UP
+  - {t: '$$mdi:transfer$$', type: trans}
   - '&bl BL_TOG'
   - RGB TOG
   - RGB BRI
