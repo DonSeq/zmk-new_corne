@@ -107,11 +107,11 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &mmv MOVE_UP     &kp CARET  &kp AMPS      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans         &trans
-&kp TILDE  &trans    &trans  &trans    &trans    &trans       &mmv MOVE_DOWN   &kp PLUS   &kp ASTERISK  &kp LBKT              &kp RIGHT_BRACKET      &kp PIPE       &trans
-&trans     &trans    &trans  &none     &none     &trans       &mmv MOVE_LEFT   &kp MINUS  &kp UNDER     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH  &trans
-                     &trans  &trans    &trans    &kp SPACE    &mmv MOVE_RIGHT  &kp RET    &kp EQUAL     &kp BACKSPACE
-                                                              &mkp LCLK
+&kp GRAVE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR   &kp PRCNT    &mmv MOVE_UP     &kp CARET  &kp AMPS      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans         &trans
+&kp TILDE  &trans    &trans  &trans    &kp LC(C)  &trans       &mmv MOVE_DOWN   &kp PLUS   &kp ASTERISK  &kp LBKT              &kp RIGHT_BRACKET      &kp PIPE       &trans
+&trans     &trans    &trans  &none     &none      &trans       &mmv MOVE_LEFT   &kp MINUS  &kp UNDER     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH  &trans
+                     &trans  &trans    &trans     &kp SPACE    &mmv MOVE_RIGHT  &kp RET    &kp EQUAL     &kp BACKSPACE
+                                                               &mkp LCLK
             >;
 
             label = "SYMBOL";
@@ -122,8 +122,8 @@
             display-name = "FN";
             bindings = <
 &kp LEFT_ALT      &kp F1            &kp F2            &kp F3            &kp F4            &kp F5              &mmv MOVE_UP     &kp F6            &kp F7             &kp F8            &kp F9            &kp F10           &kp F11
-&kp LEFT_CONTROL  &kp NUMBER_1      &kp NUMBER_2      &kp NUMBER_3      &kp NUMBER_4      &kp NUMBER_5        &mmv MOVE_DOWN   &kp NUMBER_6      &kp NUMBER_7       &kp NUMBER_8      &kp NUMBER_9      &kp NUMBER_0      &kp F12
-&kp LEFT_SHIFT    &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)    &mmv MOVE_LEFT   &kp LS(NUMBER_6)  &kp LS(NUMBER_7)   &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(NUMBER_0)  &trans
+&kp LEFT_SHIFT    &kp NUMBER_1      &kp NUMBER_2      &kp NUMBER_3      &kp NUMBER_4      &kp NUMBER_5        &mmv MOVE_DOWN   &kp NUMBER_6      &kp NUMBER_7       &kp NUMBER_8      &kp NUMBER_9      &kp NUMBER_0      &kp F12
+&kp LEFT_CONTROL  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)    &mmv MOVE_LEFT   &kp LS(NUMBER_6)  &kp LS(NUMBER_7)   &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(NUMBER_0)  &kp DEL
                                     &sys_reset        &trans            &kp LEFT_CONTROL  &kp LEFT_SHIFT      &mmv MOVE_RIGHT  &kp RIGHT_SHIFT   &kp RIGHT_CONTROL  &trans
                                                                                                               &mkp LCLK
             >;
@@ -137,7 +137,7 @@
             display-name = "SYS";
             bindings = <
 &ext_power EP_TOG  &kp N1           &kp N2           &kp N3           &kp N4           &kp N5             &mmv MOVE_UP     &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &kp BSPC
-&sys_reset         &bt BT_CLR_ALL   &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3       &mmv MOVE_DOWN   &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &kp PG_UP
+&sys_reset         &bt BT_CLR_ALL   &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3       &mmv MOVE_DOWN   &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
 &bl BL_TOG         &rgb_ug RGB_TOG  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD    &mmv MOVE_LEFT   &trans    &trans    &trans  &trans     &trans  &none
                                     &kp C_MUTE       &trans           &trans           &trans             &mmv MOVE_RIGHT  &trans    &trans    &trans
                                                                                                           &mkp LCLK
