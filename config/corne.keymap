@@ -55,7 +55,6 @@
             compatible = "zmk,behavior-tap-hold";
             label = "Custom Layer Tap";
             #binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
             flavor = "tap-preferred"; 
 
             // custom timeouts
