@@ -14,6 +14,10 @@
 #define U_MS_L &mmv MOVE_LEFT
 #define U_MS_R &mmv MOVE_RIGHT
 
+&lt {
+    quick-tap-ms = <150>;
+};
+
 / {
     behaviors {
         td0: td0 {
@@ -22,6 +26,42 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
+
+        lhm: long_homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+
+            // custom timeouts
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <125>;
+        };
+
+        shm: short_homerow_mods{
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+
+            // custom timeouts
+            tapping-term-ms = <150>;
+            quick-tap-ms = <120>;
+            require-prior-idle-ms = <0>;
+        }
+
+        slt: short_layer_tap {
+            compatible = "zmk,behavior-tap-hold";
+            label = "Custom Layer Tap";
+            #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+            flavor = "tap-preferred"; 
+
+            // custom timeouts
+            tapping-term-ms = <175>;
+            quick-tap-ms = <120>;
+        }  
 
         mmv {
             acceleration-exponent = <1>;      // 1
