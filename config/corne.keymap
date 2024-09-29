@@ -60,7 +60,7 @@
             // custom timeouts
             tapping-term-ms = <175>;
             quick-tap-ms = <120>;
-        }  
+        }; 
 
         mmv {
             acceleration-exponent = <1>;      // 1
