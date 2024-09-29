@@ -41,13 +41,13 @@ layers:
   - {t: /, s: '?'}
   - SYS
   - MUTE
-  - {t: '$$mdi:backspace-reverse-outline$$', h: func}
+  - {t: '$$mdi:keyboard-return$$', h: func}
   - {t: '$$mdi:backspace$$', h: symbol}
   - {t: '$$mdi:keyboard-space$$', h: navigation}
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:keyboard-return$$', h: navigation}
   - {t: '$$mdi:backspace$$', h: symbol}
-  - {t: '$$mdi:keyboard-space$$', h: func}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: func}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   navigation:
   - $$mdi:keyboard-esc$$
