@@ -14,9 +14,7 @@
 #define U_MS_L &mmv MOVE_LEFT
 #define U_MS_R &mmv MOVE_RIGHT
 
-&lt {
-    quick-tap-ms = <150>;
-};
+&lt { quick-tap-ms = <150>; };
 
 / {
     behaviors {
@@ -34,33 +32,36 @@
             bindings = <&kp>, <&kp>;
 
             // custom timeouts
+
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
             require-prior-idle-ms = <125>;
         };
 
-        shm: short_homerow_mods{
+        shm: short_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
 
             // custom timeouts
+
             tapping-term-ms = <150>;
             quick-tap-ms = <120>;
             require-prior-idle-ms = <0>;
         };
 
-        slt: short_layer_tap{
+        slt: short_layer_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             bindings = <&mt>, <&kp>;
 
             // custom timeouts
+
             tapping-term-ms = <175>;
             quick-tap-ms = <120>;
-        }; 
+        };
 
         mmv {
             acceleration-exponent = <1>;      // 1
@@ -104,11 +105,11 @@
             //                                                      enter
 
             bindings = <
-&kp TAB                  &kp Q  &kp W       &kp E      &kp R            &kp T          &kp UP_ARROW     &kp Y        &kp U            &kp I        &kp O    &kp P     &kp BSPC
-&mt LEFT_CONTROL ESCAPE  &kp A  &kp S       &kp D      &kp F            &kp G          &kp DOWN_ARROW   &kp H        &kp J            &kp K        &kp L    &kp SEMI  &kp SQT
-&kp LEFT_SHIFT           &kp Z  &kp X       &kp C      &kp V            &kp B          &kp LEFT_ARROW   &kp N        &kp M            &kp COMMA    &kp DOT  &kp FSLH  &mo 4
-                                &kp K_MUTE  &lt 3 DEL  &lt 2 BACKSPACE  &lt 1 SPACE    &kp RIGHT_ARROW  &lt 1 ENTER  &lt 2 BACKSPACE  &lt 3 SPACE
-                                                                                       &kp ENTER
+&kp TAB                  &kp Q            &kp W            &kp E              &kp R                &kp T          &kp UP_ARROW     &kp Y        &kp U                 &kp I               &kp O             &kp P                &kp BSPC
+&mt LEFT_CONTROL ESCAPE  &lhm LEFT_GUI A  &lhm LEFT_ALT S  &shm LEFT_SHIFT D  &shm LEFT_CONTROL F  &kp G          &kp DOWN_ARROW   &kp H        &shm RIGHT_CONTROL J  &shm RIGHT_SHIFT K  &lhm RIGHT_ALT L  &lhm RIGHT_GUI SEMI  &kp SQT
+&kp LEFT_SHIFT           &kp Z            &kp X            &kp C              &kp V                &kp B          &kp LEFT_ARROW   &kp N        &kp M                 &kp COMMA           &kp DOT           &kp FSLH             &mo 4
+                                          &kp K_MUTE       &lt 3 DEL          &lt 2 BACKSPACE      &lt 1 SPACE    &kp RIGHT_ARROW  &lt 1 ENTER  &lt 2 BACKSPACE       &lt 3 SPACE
+                                                                                                                  &kp ENTER
             >;
 
             label = "QWERTY";
