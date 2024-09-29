@@ -55,7 +55,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            bindings = <&mt>, <&kp>;
+            bindings = <&mo>, <&kp>;
 
             // custom timeouts
 
