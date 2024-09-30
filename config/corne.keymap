@@ -28,7 +28,7 @@
         lhm: long_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
 
             // custom timeouts
@@ -41,7 +41,7 @@
         shm: short_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
 
             // custom timeouts
@@ -49,6 +49,15 @@
             tapping-term-ms = <150>;
             quick-tap-ms = <180>;
             require-prior-idle-ms = <125>;
+        };
+
+        bhm: balanced_homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;    // <---[[moderate duration]]
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
         };
 
         slt: short_layer_tap {
