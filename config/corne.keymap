@@ -16,8 +16,7 @@
 
 &lt { quick-tap-ms = <150>; };
 
-&sk {
-};
+&sk { release-after-ms = <2000>; };
 
 / {
     behaviors {
@@ -49,16 +48,16 @@
 
             // custom timeouts
 
-            tapping-term-ms = <175>;
-            quick-tap-ms = <150>;
+            tapping-term-ms = <185>;
+            quick-tap-ms = <165>;
             require-prior-idle-ms = <(-1)>;
         };
 
         bhm: balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <175>;
-            quick-tap-ms = <150>;
+            tapping-term-ms = <185>;
+            quick-tap-ms = <165>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
@@ -104,6 +103,27 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
             flavor = "tap-preferred";
+        };
+
+        shrmsk: short_homerowmod_sk {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SHRMSK";
+            bindings = <&lsk>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <175>;
+            quick-tap-ms = <155>;
+            flavor = "tap-preferred";
+        };
+
+        llsk: long-lazy-sk {
+            compatible = "zmk,behavior-sticky-key";
+            label = "long lazy sk";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            release-after-ms = <5000>;
+            ignore-modifiers;
+            lazy;
         };
 
         mmv {
@@ -169,11 +189,11 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE        &kp PAGE_UP                 &kp HOME              &kp UP_ARROW            &kp END                    &kp PAGE_DOWN          &mmv MOVE_UP     &kp MINUS  &kp N7                         &kp N8                       &kp N9                     &kp KP_MULTIPLY           &kp BSPC
-&kp LEFT_SHIFT    &lhm LC(LEFT_GUI) LC(LEFT)  &hrmsk LEFT_ALT LEFT  &hrmsk LEFT_SHIFT DOWN  &hrmsk LEFT_CONTROL RIGHT  &kp LC(RIGHT_ARROW)    &mmv MOVE_DOWN   &kp EQUAL  &hrmsk RIGHT_CONTROL NUMBER_4  &hrmsk RIGHT_SHIFT NUMBER_5  &hrmsk RIGHT_ALT NUMBER_6  &lhm RIGHT_GUI KP_DIVIDE  &trans
-&kp LEFT_CONTROL  &kp LEFT_WIN                &lsk LEFT_ALT         &lsk LEFT_SHIFT         &lsk LEFT_CONTROL          &kp DEL                &mmv MOVE_LEFT   &kp PLUS   &kp NUMBER_1                   &kp NUMBER_2                 &kp NUMBER_3               &kp RIGHT_SHIFT           &trans
-                                              &mkp RCLK             &trans                  &trans                     &trans                 &mmv MOVE_RIGHT  &kp ENTER  &kp N0                         &kp DEL
-                                                                                                                                              &mkp LCLK
+&kp ESCAPE        &kp PAGE_UP         &kp HOME              &kp UP_ARROW            &kp END                    &kp PAGE_DOWN          &mmv MOVE_UP     &kp MINUS  &kp N7                         &kp N8                       &kp N9                     &kp KP_MULTIPLY  &kp BSPC
+&kp CAPS          &llsk LC(LEFT_GUI)  &hrmsk LEFT_ALT LEFT  &hrmsk LEFT_SHIFT DOWN  &hrmsk LEFT_CONTROL RIGHT  &kp LC(RIGHT_ARROW)    &mmv MOVE_DOWN   &kp EQUAL  &hrmsk RIGHT_CONTROL NUMBER_4  &hrmsk RIGHT_SHIFT NUMBER_5  &hrmsk RIGHT_ALT NUMBER_6  &llsk RIGHT_GUI  &trans
+&kp LEFT_CONTROL  &llsk LEFT_WIN      &lsk LEFT_ALT         &lsk LEFT_SHIFT         &lsk LEFT_CONTROL          &kp DEL                &mmv MOVE_LEFT   &kp PLUS   &kp NUMBER_1                   &kp NUMBER_2                 &kp NUMBER_3               &kp RIGHT_SHIFT  &trans
+                                      &mkp RCLK             &trans                  &trans                     &trans                 &mmv MOVE_RIGHT  &kp ENTER  &kp N0                         &kp DEL
+                                                                                                                                      &mkp LCLK
             >;
 
             label = "NUMBER";
