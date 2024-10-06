@@ -98,7 +98,7 @@
         hrmsk: home_row_mod_sticky_keys {
             compatible = "zmk,behavior-hold-tap";
             label = "home row mod sticky keys";
-            bindings = <&sk>, <&kp>;
+            bindings = <&lsk>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -169,11 +169,11 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE        &kp PAGE_UP                   &kp HOME              &kp UP_ARROW            &kp END                    &kp PAGE_DOWN          &mmv MOVE_UP     &kp MINUS  &kp N7                       &kp N8                     &kp N9                   &kp KP_MULTIPLY           &kp BSPC
-&kp LEFT_SHIFT    &hrmsk LC(LEFT_GUI) LC(LEFT)  &hrmsk LEFT_ALT LEFT  &hrmsk LEFT_SHIFT DOWN  &hrmsk LEFT_CONTROL RIGHT  &kp LC(RIGHT_ARROW)    &mmv MOVE_DOWN   &kp EQUAL  &lhm RIGHT_CONTROL NUMBER_4  &lhm RIGHT_SHIFT NUMBER_5  &lhm RIGHT_ALT NUMBER_6  &lhm RIGHT_GUI KP_DIVIDE  &trans
-&kp LEFT_CONTROL  &kp LEFT_WIN                  &lsk LEFT_ALT         &lsk LEFT_SHIFT         &lsk LEFT_CONTROL          &kp DEL                &mmv MOVE_LEFT   &kp PLUS   &kp NUMBER_1                 &kp NUMBER_2               &kp NUMBER_3             &kp RIGHT_SHIFT           &trans
-                                                &mkp RCLK             &trans                  &trans                     &trans                 &mmv MOVE_RIGHT  &kp ENTER  &kp N0                       &kp DEL
-                                                                                                                                                &mkp LCLK
+&kp ESCAPE        &kp PAGE_UP                 &kp HOME              &kp UP_ARROW            &kp END                    &kp PAGE_DOWN          &mmv MOVE_UP     &kp MINUS  &kp N7                         &kp N8                       &kp N9                     &kp KP_MULTIPLY           &kp BSPC
+&kp LEFT_SHIFT    &lhm LC(LEFT_GUI) LC(LEFT)  &hrmsk LEFT_ALT LEFT  &hrmsk LEFT_SHIFT DOWN  &hrmsk LEFT_CONTROL RIGHT  &kp LC(RIGHT_ARROW)    &mmv MOVE_DOWN   &kp EQUAL  &hrmsk RIGHT_CONTROL NUMBER_4  &hrmsk RIGHT_SHIFT NUMBER_5  &hrmsk RIGHT_ALT NUMBER_6  &lhm RIGHT_GUI KP_DIVIDE  &trans
+&kp LEFT_CONTROL  &kp LEFT_WIN                &lsk LEFT_ALT         &lsk LEFT_SHIFT         &lsk LEFT_CONTROL          &kp DEL                &mmv MOVE_LEFT   &kp PLUS   &kp NUMBER_1                   &kp NUMBER_2                 &kp NUMBER_3               &kp RIGHT_SHIFT           &trans
+                                              &mkp RCLK             &trans                  &trans                     &trans                 &mmv MOVE_RIGHT  &kp ENTER  &kp N0                         &kp DEL
+                                                                                                                                              &mkp LCLK
             >;
 
             label = "NUMBER";
