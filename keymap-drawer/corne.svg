@@ -560,11 +560,12 @@ rect.held, rect.combo.held {
 </a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="454" y="295" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
 </g>
 <g class="combo combopos-1">
-<path d="M317,206 l54,78" class="combo"/>
-<path d="M317,206 l-54,-78" class="combo"/>
-<rect rx="6" ry="6" x="303" y="193" width="28" height="26" class="combo"/>
-<text x="317" y="206" class="combo tap">
-<tspan x="317" dy="-0.6em">KP</tspan><tspan x="317" dy="1.2em">ENTER</tspan>
+<path d="M277,172 l93,113" class="combo"/>
+<path d="M277,172 l-18,-43" class="combo"/>
+<path d="M277,172 l-66,-55" class="combo"/>
+<rect rx="6" ry="6" x="263" y="159" width="28" height="26" class="combo"/>
+<text x="277" y="172" class="combo tap">
+<tspan x="277" dy="-0.6em">KP</tspan><tspan x="277" dy="1.2em">ENTER</tspan>
 </text>
 </g>
 </g>
@@ -849,11 +850,12 @@ rect.held, rect.combo.held {
 </a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="454" y="295" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
 </g>
 <g class="combo combopos-1">
-<path d="M317,206 l54,78" class="combo"/>
-<path d="M317,206 l-54,-78" class="combo"/>
-<rect rx="6" ry="6" x="303" y="193" width="28" height="26" class="combo"/>
-<text x="317" y="206" class="combo tap">
-<tspan x="317" dy="-0.6em">KP</tspan><tspan x="317" dy="1.2em">ENTER</tspan>
+<path d="M277,172 l93,113" class="combo"/>
+<path d="M277,172 l-18,-43" class="combo"/>
+<path d="M277,172 l-66,-55" class="combo"/>
+<rect rx="6" ry="6" x="263" y="159" width="28" height="26" class="combo"/>
+<text x="277" y="172" class="combo tap">
+<tspan x="277" dy="-0.6em">KP</tspan><tspan x="277" dy="1.2em">ENTER</tspan>
 </text>
 </g>
 </g>
@@ -1121,11 +1123,12 @@ rect.held, rect.combo.held {
 </a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="454" y="295" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
 </g>
 <g class="combo combopos-1">
-<path d="M317,206 l54,78" class="combo"/>
-<path d="M317,206 l-54,-78" class="combo"/>
-<rect rx="6" ry="6" x="303" y="193" width="28" height="26" class="combo"/>
-<text x="317" y="206" class="combo tap">
-<tspan x="317" dy="-0.6em">KP</tspan><tspan x="317" dy="1.2em">ENTER</tspan>
+<path d="M277,172 l93,113" class="combo"/>
+<path d="M277,172 l-18,-43" class="combo"/>
+<path d="M277,172 l-66,-55" class="combo"/>
+<rect rx="6" ry="6" x="263" y="159" width="28" height="26" class="combo"/>
+<text x="277" y="172" class="combo tap">
+<tspan x="277" dy="-0.6em">KP</tspan><tspan x="277" dy="1.2em">ENTER</tspan>
 </text>
 </g>
 </g>
@@ -1404,11 +1407,12 @@ rect.held, rect.combo.held {
 </a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="454" y="295" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
 </g>
 <g class="combo combopos-1">
-<path d="M317,206 l54,78" class="combo"/>
-<path d="M317,206 l-54,-78" class="combo"/>
-<rect rx="6" ry="6" x="303" y="193" width="28" height="26" class="combo"/>
-<text x="317" y="206" class="combo tap">
-<tspan x="317" dy="-0.6em">KP</tspan><tspan x="317" dy="1.2em">ENTER</tspan>
+<path d="M277,172 l93,113" class="combo"/>
+<path d="M277,172 l-18,-43" class="combo"/>
+<path d="M277,172 l-66,-55" class="combo"/>
+<rect rx="6" ry="6" x="263" y="159" width="28" height="26" class="combo"/>
+<text x="277" y="172" class="combo tap">
+<tspan x="277" dy="-0.6em">KP</tspan><tspan x="277" dy="1.2em">ENTER</tspan>
 </text>
 </g>
 </g>
@@ -1700,11 +1704,12 @@ rect.held, rect.combo.held {
 </a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="454" y="295" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
 </g>
 <g class="combo combopos-1">
-<path d="M317,206 l54,78" class="combo"/>
-<path d="M317,206 l-54,-78" class="combo"/>
-<rect rx="6" ry="6" x="303" y="193" width="28" height="26" class="combo"/>
-<text x="317" y="206" class="combo tap">
-<tspan x="317" dy="-0.6em">KP</tspan><tspan x="317" dy="1.2em">ENTER</tspan>
+<path d="M277,172 l93,113" class="combo"/>
+<path d="M277,172 l-18,-43" class="combo"/>
+<path d="M277,172 l-66,-55" class="combo"/>
+<rect rx="6" ry="6" x="263" y="159" width="28" height="26" class="combo"/>
+<text x="277" y="172" class="combo tap">
+<tspan x="277" dy="-0.6em">KP</tspan><tspan x="277" dy="1.2em">ENTER</tspan>
 </text>
 </g>
 </g>
