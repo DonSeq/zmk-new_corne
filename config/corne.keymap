@@ -164,7 +164,7 @@
 
         enter {
             bindings = <&kp KP_ENTER>;
-            key-positions = <42 17>;
+            key-positions = <42 17 16>;
         };
     };
 
