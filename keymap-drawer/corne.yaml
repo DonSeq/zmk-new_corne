@@ -247,4 +247,4 @@ layers:
   - $$mdi:mouse-left-click-outline$$
 combos:
 - p: [42, 44]
-  k: func
+  k: {t: func, h: '$$mdi:gesture-tap-hold$$'}

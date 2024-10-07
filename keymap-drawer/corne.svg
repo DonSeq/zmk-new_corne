@@ -557,7 +557,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="448" y="286" width="28" height="26" class="combo"/>
 <a href="#func">
 <text x="462" y="299" class="combo tap layer-activator">func</text>
-</a></g>
+</a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="454" y="295" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
+</g>
 </g>
 </g>
 <g transform="translate(40, 405)" class="layer-navigation">
@@ -835,7 +836,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="448" y="286" width="28" height="26" class="combo"/>
 <a href="#func">
 <text x="462" y="299" class="combo tap layer-activator">func</text>
-</a></g>
+</a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="454" y="295" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
+</g>
 </g>
 </g>
 <g transform="translate(40, 811)" class="layer-symbol">
@@ -1098,7 +1100,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="448" y="286" width="28" height="26" class="combo"/>
 <a href="#func">
 <text x="462" y="299" class="combo tap layer-activator">func</text>
-</a></g>
+</a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="454" y="295" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1216)" class="layer-func">
@@ -1372,7 +1375,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="448" y="286" width="28" height="26" class="combo"/>
 <a href="#func">
 <text x="462" y="299" class="combo tap layer-activator">func</text>
-</a></g>
+</a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="454" y="295" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1622)" class="layer-SYS">
@@ -1659,7 +1663,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="448" y="286" width="28" height="26" class="combo"/>
 <a href="#func">
 <text x="462" y="299" class="combo tap layer-activator">func</text>
-</a></g>
+</a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="454" y="295" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
+</g>
 </g>
 </g>
 </svg>
