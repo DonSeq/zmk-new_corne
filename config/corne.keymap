@@ -203,11 +203,11 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE        &kp PAGE_UP       &kp HOME              &kp UP_ARROW            &kp END                    &kp PAGE_DOWN          &mmv MOVE_UP     &kp MINUS  &kp N7        &kp N8        &kp N9        &kp KP_MULTIPLY  &kp BSPC
-&kp CAPS          &kp LC(LEFT_GUI)  &hrmsk LEFT_ALT LEFT  &hrmsk LEFT_SHIFT DOWN  &hrmsk LEFT_CONTROL RIGHT  &kp LC(RIGHT_ARROW)    &mmv MOVE_DOWN   &kp EQUAL  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_DIVIDE    &trans
-&kp LEFT_CONTROL  &llsk LEFT_WIN    &lsk LEFT_ALT         &lsk LEFT_SHIFT         &lsk LEFT_CONTROL          &kp DEL                &mmv MOVE_LEFT   &kp PLUS   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp RIGHT_SHIFT  &trans
-                                    &mkp RCLK             &trans                  &trans                     &trans                 &mmv MOVE_RIGHT  &kp ENTER  &kp N0        &kp DEL
-                                                                                                                                    &mkp LCLK
+&kp ESCAPE        &kp PAGE_UP         &kp HOME            &kp UP_ARROW          &kp END                  &kp PAGE_DOWN          &mmv MOVE_UP     &kp MINUS  &kp N7                      &kp N8                     &kp N9        &kp KP_MULTIPLY  &kp BSPC
+&kp CAPS          &kp LC(LEFT_ARROW)  &shm LEFT_ALT LEFT  &shm LEFT_SHIFT DOWN  &shm LEFT_CONTROL RIGHT  &kp LC(RIGHT_ARROW)    &mmv MOVE_DOWN   &kp EQUAL  &shm LEFT_CONTROL NUMBER_4  &shm RIGHT_SHIFT NUMBER_5  &kp NUMBER_6  &kp KP_DIVIDE    &trans
+&kp LEFT_CONTROL  &llsk LEFT_WIN      &lsk LEFT_ALT       &lsk LEFT_SHIFT       &lsk LEFT_CONTROL        &kp DEL                &mmv MOVE_LEFT   &kp PLUS   &kp NUMBER_1                &kp NUMBER_2               &kp NUMBER_3  &kp RIGHT_SHIFT  &trans
+                                      &mkp RCLK           &trans                &trans                   &trans                 &mmv MOVE_RIGHT  &kp ENTER  &kp N0                      &kp DEL
+                                                                                                                                &mkp LCLK
             >;
 
             label = "NUMBER";
