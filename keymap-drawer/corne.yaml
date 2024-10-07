@@ -248,3 +248,5 @@ layers:
 combos:
 - p: [42, 44]
   k: {t: func, h: '$$mdi:gesture-tap-hold$$'}
+- p: [42, 17]
+  k: KP ENTER
