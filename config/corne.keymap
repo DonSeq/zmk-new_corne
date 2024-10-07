@@ -161,6 +161,11 @@
             bindings = <&sl 3>;
             key-positions = <42 44>;
         };
+
+        enter {
+            bindings = <&kp KP_ENTER>;
+            key-positions = <42 17>;
+        };
     };
 
     keymap {
