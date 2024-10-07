@@ -158,7 +158,7 @@
         compatible = "zmk,combos";
 
         combo {
-            bindings = <&mo 3>;
+            bindings = <&sl 3>;
             key-positions = <42 44>;
         };
     };
