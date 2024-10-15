@@ -248,19 +248,28 @@ layers:
 combos:
 - p: [42, 44]
   k: {t: func, h: '$$mdi:gesture-tap-hold$$'}
+  l: [Default]
 - p: [42, 17]
   k: KP ENTER
+  l: [Default]
 - p: [3, 4]
   k: (
+  l: [Default]
 - p: [16, 17]
   k: {t: '[', s: '{'}
+  l: [Default]
 - p: [16, 17, 15]
   k: {t: '=', s: +}
+  l: [Default]
 - p: [29, 30]
   k: '{'
+  l: [Default]
 - p: [35, 34]
   k: '}'
+  l: [Default]
 - p: [21, 22]
   k: {t: ']', s: '}'}
+  l: [Default]
 - p: [9, 8]
   k: )
+  l: [Default]
