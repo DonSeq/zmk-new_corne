@@ -73,7 +73,7 @@ layers:
   - {t: '=', s: +}
   - {t: '4', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '5', h: '$$mdi:apple-keyboard-shift$$'}
-  - '6'
+  - {t: '6', h: '$$mdi:apple-keyboard-option$$'}
   - KP DIVIDE
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-control$$
@@ -248,5 +248,19 @@ layers:
 combos:
 - p: [42, 44]
   k: {t: func, h: '$$mdi:gesture-tap-hold$$'}
-- p: [42, 17, 16]
+- p: [42, 17]
   k: KP ENTER
+- p: [3, 4]
+  k: (
+- p: [16, 17]
+  k: {t: '[', s: '{'}
+- p: [16, 17, 15]
+  k: {t: '=', s: +}
+- p: [29, 30]
+  k: '{'
+- p: [35, 34]
+  k: '}'
+- p: [21, 22]
+  k: {t: ']', s: '}'}
+- p: [9, 8]
+  k: )
