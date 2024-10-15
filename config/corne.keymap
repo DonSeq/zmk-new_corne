@@ -60,6 +60,7 @@
             #binding-cells = <1>;
             release-after-ms = <5000>;
             ignore-modifiers;
+            quick-release;
         };
 
         llsk: long-lazy-sk {
@@ -70,6 +71,7 @@
             release-after-ms = <5000>;
             ignore-modifiers;
             lazy;
+            quick-release;
         };
 
         thm_right: timeless_homerow_mods_right {
@@ -149,29 +151,32 @@
             bindings = <&sl 3>;
             key-positions = <42 44>;
             timeout-ms = <75>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <100>;
             slow-release;
+            layers = <0>;
         };
 
         enter {
             bindings = <&kp KP_ENTER>;
             key-positions = <42 17>;
-            timeout-ms = <65>;
-            require-prior-idle-ms = <100>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <125>;
+            layers = <0>;
         };
 
         parenthesis-left {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <3 4>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <65>;
+            layers = <0>;
         };
 
         bracket_left {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <16 17>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <65>;
+            timeout-ms = <50>;
+            layers = <0>;
         };
 
         eq {
@@ -179,13 +184,15 @@
             key-positions = <16 17 15>;
             require-prior-idle-ms = <100>;
             timeout-ms = <65>;
+            layers = <0>;
         };
 
         brace_left {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <29 30>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <65>;
+            timeout-ms = <50>;
+            layers = <0>;
         };
 
         brace_right {
@@ -193,7 +200,7 @@
             key-positions = <35 34>;
             slow-release;
             require-prior-idle-ms = <100>;
-            timeout-ms = <65>;
+            layers = <0>;
         };
 
         bracket_right {
@@ -201,13 +208,15 @@
             key-positions = <21 22>;
             require-prior-idle-ms = <100>;
             timeout-ms = <65>;
+            layers = <0>;
         };
 
         paren_right {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <9 8>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <65>;
+            timeout-ms = <50>;
+            layers = <0>;
         };
     };
 
